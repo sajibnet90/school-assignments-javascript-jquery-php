@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8"/>
+<title>jQuery Example 13-6</title>
+
+<style>
+div {
+text-align: center;
+}
+</style>
+
+<script
+src="https://code.jquery.com/jquery-3.6.1.js"
+integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+crossorigin="anonymous">
+</script>
+<script  src="assgn5.js"></script>
+
+</head>
+
+<body>
+<table>
+    <tr><td><button type="button" id="fiButton" >fi</button></td>
+        <td> <button type="button" id="enButton">en</button></td>
+</table>
+    <button type="button" id="startButton"><span id="startButtonTxt">Start</span> </button>
+ 
+<button type="button" id="nextButton" style="display: none;"><span id="nextButtonTxt">Next</span></button>
+<button type="button" id="previousButton" style="display: none;"><span id="previousButtonTxt">Previous</span></button>
+ 
+<div id="p1" class="part" style="display: none;right:100px;">  
+    <h1 id="p1_h1">Part I</h1>
+    <h2 id="p1_h2">jQuery Examples</h2>
+ </div>
+ 
+<div id="p2" class="part" style="display: none; right:200px;">
+    <h1 id="p2_h1">Part II</h1>
+    <p id="p2_p1">jQuery is a JavaScript library.</p>
+    <p id="p2_p2">It is fun to use jQuery!</p>
+    <button id="hideb_txt">Hide Text</button>
+    <button id="showb_txt">Show Text</button>
+</div>
+    
+<div id="p3" class="part" style="display: none;right:300px;">
+    <h1 id="p3_h1">Part III</h1>
+    <hr>
+    <table class="ptable" id="product_table">
+    <tr>
+    <th id="p_title">Product</th>
+    <th id="p_price">Price</th>
+    </tr>
+    <tr>
+        <td id="pname_1">Milk</td>
+        <td>0.99</td>
+    </tr>
+    <tr id="tr3">
+    <td id="pname_2">Bread</td>
+    <td>3.48</td>
+    </tr>
+    </table>
+</div>
+    
+ 
+<div id="p4" class="part" style="display: none;right:400px;">
+    <h1 id="pIV_h1">Part IV</h1>
+    <h2 id="pIV_h2">Registeraion</h2>
+<form id="form1" action="feedback.php" method="post">
+<table>
+<tr>
+    <td id="form1_fname_txt">Fist name:</td>
+    <td><input type="text" id="firstname" name="firstname" /></td>
+</tr>
+<tr>
+    <td id="form1_lname_txt">Last name:</td>
+    <td><input type="text" id="lastname" name="lastname"/></td>
+</tr>
+</table>
+</form>
+
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+<!--This is index.html file -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Learn PHP</title>
+    
+
+    <style>
+        th{
+            color: crimson;
+        }
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+        h3{
+            color: blue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Employee Information:</h3>
+    <form action="main.php" method="get" autocomplete="on">
+        <table>
+            <tr>
+                <th>First name</th>
+                <td><input type="text" name="first_name" required="required"></td>
+            </tr>
+            <tr>
+                <th>Last name</th>
+                <td><input type="text" name="last_name" required="required"></td>
+            </tr>
+            <tr>
+                <th>Job title</th>
+                <td><input type="job" placeholder="Accountant" name="jobtitle" autocomplete="on" autofocus="autofocus" required="required"></td>
+            </tr>
+            <tr>
+                <th>Salary</th>
+                <td>
+                    <input type="number" value = 000000 name="salary" required >
+                </td>
+            </tr>
+            <tr>
+                <th>Job Options</th>
+                <td colspan="3">
+                    <input type="checkbox"  name="jobs[]" value="permanent"  >Permanent  <!-- why not syntax jobs[]????????? -->
+                    <input type="checkbox" name="jobs[]" value="partial">Partial 
+                    <input type="checkbox" checked name="jobs[]" value="freelance">Freelance</td>
+            </tr>
+            <tr>
+                <th>TAX Rate</th>
+                <td>
+                    <input type="number" name="tax" required>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                <input type="submit" name="Submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>JavaScript Form Exercise</h1>
+    <p>Modifying HTML Elements</p>
+
+<form id="reg_form" action="javascript:displayData();">
+<table>
+        <tr>
+            <th>Appointment title</th>
+            <td><input type="text" name="appointment" id="appointment" placeholder="Enter title" required><span id="errAppointment"></span><td>
+        </tr>
+        <tr>
+            <th>Location:</th>
+            <td><input type="text" name="location" id="location" placeholder="Enter location" required><span id="errLocation"></span></td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td><input type="date" name="date" id="date" placeholder="Enter date" required><span id="errDate"></span></td>
+        </tr>
+        <tr>
+            <th>Participants:</th>
+            <td><textarea name="participant" id="participant" form="reg_form" placeholder="Enter participant names"></textarea required><span id="errParticipant"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" form="reg_form" onclick="errorMsg();">
+            <button type="reset">Reset</button>
+            <button type="button" onclick="clearData();">Clear</button></td>
+        </tr>   
+</table>
+</form>
+
+<h4>Registration summary:</h4>
+<table id="summary_table">
+    <thead>   <!-- thead tag should be used as child inside table tag -->
+        <tr>
+            <th>Appointment title —</th>
+            <th>Location—</th>
+            <th>Date—</th>
+            <th>Participants-</th>
+        </tr>
+    </thead>
+    <tbody id="summary" >
+    </tbody>
+</table>
+
+</body>
+</html>

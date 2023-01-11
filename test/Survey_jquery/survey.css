@@ -1,0 +1,50 @@
+/*
+body{
+background: linear-gradient(to right, #388b9c, #67c4e5, #ffffff);
+font-family:monospace;
+}
+form{
+  /* From https://css.glass */
+/*background: rgba(255, 255, 255, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.5px);
+-webkit-backdrop-filter: blur(7.5px);
+margin: 100px auto;
+padding: 40px ;
+width: 30%;
+}
+.page p{
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+input{
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  font-family:monospace;
+  outline: none;
+}
+button{
+  margin: 20px 15px 0 0;
+  background: #509caa;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-wrapper{
+    display: flex;
+}  
+
+button:hover{
+    opacity: 0.8;
+  }
+*/

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11 jquery</title>
+    <script
+src="https://code.jquery.com/jquery-3.6.1.js"
+integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+crossorigin="anonymous">
+</script>
+<script src="assgn11.js"></script>
+
+<style>
+    #table1{
+        background-color: aqua;
+    }
+
+</style>
+
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <h4>Click 'start to begin'</h4>
+    <!-- <form id="form1" method="get" action=""> -->
+
+    <div id="part1" name="part1" class="part" style="display: none;right:100px;">
+        <h3>part 1</h2>
+        <table id="table1" name="table1" >
+            <td>First Name:<input type="text" name="fname" id="fname"></td>
+            <td>Last Name: <input type="text" name="lname"  id="lname"></td>
+        </table>
+    </div>
+    <br>
+    
+    <button type="button" id="startButton" onclick="getstarted()">start</button>
+    <button type="button" id="nextButton" onclick="nextButton()">next</button>
+    <button type="button" id="previousButton" onclick="previousButton()">previous</button>
+
+    <div id="part2" name="part2" class="part" style="display: none;right:100px;">
+        <h3>part 2</h2>
+            <table id="table2" name="table2" >
+                <td>Phone: <input type="number" name="phone" id="phone"></td>
+                <td>E-mail:<input type="email" name="email"  id="email"></td>
+            </table>
+        </div>
+        
+    <div id="part3" name="part3" class="part" style="display: none;right:100px;">
+        <h3>part 3</h2>
+            <table id="table3" name="table3" >
+                <tr>
+                <td>Job: <input type="text" name="job" id="job"></td>
+                <td>Hobbies <input type="text" name="hobby" id="hobby"></td>
+                </tr>
+            </table>
+        </div>
+    <div id="part4" name="part4" class="part" style="display: none;right:100px;">
+        <h3>Part 4</h3>
+        Comments:
+        <br>
+        <textarea name="comments" id="" cols="30" rows="10"></textarea>
+        <br>
+        <button>Submit</button>
+    </div>
+    <!-- </form> -->
+    
+</body>
+</html>

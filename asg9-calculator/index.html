@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <div id="heading"><h1>Calculator</h1>
+<!---------- form data -------->
+    <form id="add_form" onsubmit="runCode(event)">
+    <table id="center">
+        <tr>
+            <td><input type="number" name="num1" id="num1"></td>
+            <td>+</td>
+            <td><input type="number" name="num2" id="num2" form="add_form"></td> <!--form="add_form"????-->
+            <td><input type="submit" value="=" onclick="addData()"></td>
+            <td><input type="text" name="result" id="result1"></td>
+        </tr>
+
+        <tr>
+            <td><input type="number" name="num1" id="num3" ></td>
+            <td>-</td>
+            <td><input type="number" name="num2" id="num4" ></td>
+            <td><input type="submit" value="=" onclick="subData()"></td>
+            <td><input type="text" name="result" id="result2"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="num1" id="num5" ></td>
+            <td>*</td>
+            <td><input type="number" name="num2" id="num6" ></td>
+            <td><input type="submit" value="=" onclick="multiData()"></td>
+            <td><input type="text" name="result" id="result3"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="num1" id="num7" ></td>
+            <td>/</td>
+            <td><input type="number" name="num2" id="num8" ></td>
+            <td><input type="submit" value="=" onclick="divideData()"></td>
+            <td><input type="text" name="result" id="result4"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="num1" id="num9" ></td>
+            <td>%</td>
+            <td><input type="number" name="num2" id="num10" ></td>
+            <td><input type="submit" value="=" onclick="moduloData()"></td>
+            <td><input type="text" name="result" id="result5"></td>
+        </tr>
+    </table>
+</form>
+    
+</div>
+    
+</body>
+</html>

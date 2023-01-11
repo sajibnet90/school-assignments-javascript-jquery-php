@@ -1,0 +1,11 @@
+body{background-color: rgb(140, 245, 184);}
+h1{color: rgb(28, 19, 195);}
+p{color: rgb(250, 96, 1);
+font-weight: 400;
+font-style: italic;
+}
+table,td{text-align: left; }
+
+table {
+    border: 1px solid black;
+}
